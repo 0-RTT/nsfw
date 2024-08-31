@@ -1,4 +1,4 @@
-本项目使用了 [nsfjs](https://github.com/infinitered/nsfwjs) 提供的模型进行内容审核。
+本项目使用了 [nsfwjs](https://github.com/infinitered/nsfwjs) 提供的模型进行内容审核。
 
 一键安装
 
