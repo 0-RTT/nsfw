@@ -1,0 +1,20 @@
+{
+  "name": "nsfw",
+  "version": "1.0.0",
+  "description": "nsfwj",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "latest",
+    "axios": "latest",
+    "nsfwjs": "latest",
+    "@tensorflow/tfjs-node": "latest",
+    "sharp": "latest"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "license": "MIT"
+}
