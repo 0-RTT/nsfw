@@ -19,6 +19,12 @@ nsfwjs.load("https://raw.githubusercontent.com/infinitered/nsfwjs/master/models/
     console.error('Error loading model:', error);
   });
 
+// Redirect root path to GitHub
+app.get('/', (req, res) => {
+  res.redirect('https://github.com/0-RTT/nsfw');
+});
+
+// NSFW classification endpoint
 app.get('/nsfw', async (req, res) => {
   try {
     const { url } = req.query;
@@ -62,6 +68,11 @@ app.get('/nsfw', async (req, res) => {
       return res.status(500).json({ message: 'Internal server error.', details: error.message });
     }
   }
+});
+
+// Handle 404 for any other paths
+app.use((req, res) => {
+  res.sendStatus(404); // 直接返回 404 响应
 });
 
 app.listen(PORT, HOST, () => {
