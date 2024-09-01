@@ -39,3 +39,16 @@ API 将返回一个 JSON 对象,具体请参考[nsfw_model](https://github.com/G
 }
 ```
 
+示例：
+GET https://api.jiasu.in/nsfw?url=https://telegra.ph/file/e6ae6329a5ee2f64acd06.jpg
+
+```
+{
+  "Porn": 0.63987535238266,
+  "Sexy": 0.351394861936569,
+  "Hentai": 0.00593265052884817,
+  "Neutral": 0.00271736341528595,
+  "Drawing": 0.000079724035458639
+}
+```
+
