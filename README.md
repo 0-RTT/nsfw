@@ -25,7 +25,7 @@ bash -c "$(curl -L https://jiasu.in/nsfw.sh)" @ remove
     }
 ```
 
-用户可以通过以下格式的请求获取结果```GET https://example.com/nsfw?url=图片链接```
+用户可以通过以下格式的请求获取结果```GET https://example.com/nsfw?url=https://telegra.ph/file/e6ae6329a5ee2f64acd06.jpg```
 
 API 将返回一个 JSON 对象,具体请参考[nsfw_model](https://github.com/GantMan/nsfw_model)
 
@@ -36,19 +36,6 @@ API 将返回一个 JSON 对象,具体请参考[nsfw_model](https://github.com/G
   "Hentai": 0.018338331952691078,
   "Drawing": 0.012442261911928654,
   "Sexy": 0.005500736180692911
-}
-```
-
-示例：
-GET https://api.jiasu.in/nsfw?url=https://telegra.ph/file/e6ae6329a5ee2f64acd06.jpg
-
-```
-{
-  "Porn": 0.63987535238266,
-  "Sexy": 0.351394861936569,
-  "Hentai": 0.00593265052884817,
-  "Neutral": 0.00271736341528595,
-  "Drawing": 0.000079724035458639
 }
 ```
 
