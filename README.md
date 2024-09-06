@@ -3,13 +3,13 @@
 一键安装
 
 ```
-bash -c "$(curl -L https://jiasu.in/nsfw.sh)" @ install
+bash -c "$(curl -L https://raw.githubusercontent.com/0-RTT/index/main/nsfw.sh)" @ install
 ```
 
 一键卸载
 
 ```
-bash -c "$(curl -L https://jiasu.in/nsfw.sh)" @ remove
+bash -c "$(curl -L https://raw.githubusercontent.com/0-RTT/index/main/nsfw.sh)" @ remove
 ```
 
 配置nginx反代
